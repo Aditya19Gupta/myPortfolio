@@ -30,7 +30,17 @@
         background: linear-gradient(to right, #101c81, #2a6ba3);
         min-height: 100vh;
     } */
-    
+    #glow {
+            z-index: 999999999;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(0, 255, 204, 0.8) 0%, rgba(0, 255, 204, 0) 80%);
+            border-radius: 50%;
+            pointer-events: none;
+            filter: blur(20px);
+            transform: translate(-50%, -50%);
+        }
     .owl-carousel .owl-item {
         transition: all 0.3s ease-in-out;
     }
@@ -110,6 +120,7 @@
     }
 </style>
 <body>
+    <div id="glow"></div>
     <!-- header design -->
     <header class="headerex">
 
@@ -160,7 +171,7 @@
         <img src="re.png" alt="">
     </div>
     <div class="about-content">
-            <div class="carousel-inner">
+            <div class="carousel">
                 <h1>About <span>Me</span></h1>
                 <div >
 
@@ -346,7 +357,15 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
 <script src="my.js"></script>
-<script> $(document).ready(function () {
+<script>
+const glow = document.getElementById('glow');
+
+document.addEventListener('mousemove', (e) => {
+    glow.style.left = e.pageX + 'px';
+    glow.style.top = e.pageY + 'px';
+});
+
+$(document).ready(function () {
     var silder = $(".owl-carousel");
     silder.owlCarousel({
         autoplay: true,
