@@ -223,9 +223,9 @@ header{
 
     border-bottom: .1rem solid #fff;
 }
-.about-content:hover{
+/* .about-content:hover{
     background:#353636;
-}
+} */
 .about-content .btn{
     margin-top: 2.5rem;
 }
@@ -283,7 +283,7 @@ header{
 }
 .contact{
 
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 .contact h1 span{
     font-size: 3rem;
@@ -327,7 +327,11 @@ header{
     background: var(--bg-color);
     padding-bottom: 2rem;
 }
-
+.row{
+    background-color: var(--second-bg-color);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+}
 .row h3{
 
     background: transparent;
@@ -454,6 +458,7 @@ header{
     }
     
 }
+
 /* carousel */
 .owl-carousel .owl-item {
     transition: all 0.3s ease-in-out;
@@ -531,4 +536,14 @@ header{
     .owl-carousel .owl-item .card .name {
         left: 30%;
     }
+}
+.owl-item > .card{
+    width: 40rem!important;
+}
+
+#mexperience{
+    background-color: var(--second-bg-color);
+}
+body::-webkit-scrollbar { 
+    display: none;  /* For Chrome, Safari, and Opera */
 }
