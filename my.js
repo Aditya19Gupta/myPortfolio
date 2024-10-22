@@ -79,6 +79,12 @@ const typed= new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 });
+const glow = document.getElementById('glow');
+
+// document.addEventListener('mousemove', (e) => {
+//     glow.style.left = e.pageX + 'px';
+//     glow.style.top = e.pageY + 'px';
+// });
 
 $(document).ready(function () {
     var silder = $(".owl-carousel");
@@ -87,7 +93,7 @@ $(document).ready(function () {
         autoplayTimeout: 3000,
         autoplayHoverPause: false,
         items: 1,
-        stagePadding: 20,
+        stagePadding: -10,
         center: true,
         nav: false,
         margin: 50,
