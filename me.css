@@ -679,3 +679,167 @@ body {
     font-weight: bold; /* Make active link bold */
     border-bottom: 2px solid #0ef; /* Optional underline for active link */
   }
+
+
+
+
+
+
+
+
+
+  /* Responsive Styles */
+@media (max-width: 1200px) {
+    .headerex {
+        padding: 1rem 5%;
+    }
+
+    .headerex #main-logo {
+        font-size: 2.5rem;
+    }
+
+    .navbarex a {
+        font-size: 1.5rem;
+        margin-left: 2rem;
+    }
+
+    .home-content h3,
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-image {
+        width: 50vw;
+    }
+
+    .about-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        font-size: 1.2rem;
+    }
+
+    .social-media a {
+        width: 3.5rem;
+        height: 3.5rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerex {
+        flex-direction: column;
+        padding: 1rem 5%;
+        align-items: flex-start;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-left: auto;
+    }
+
+    .navbarex {
+        display: none; /* Hide navigation links on mobile */
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 1rem;
+    }
+
+    .navbarex a {
+        margin: 1rem 0;
+    }
+
+    .home-content h3,
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .about-content h1 {
+        font-size: 2rem;
+    }
+
+    .contact h1 {
+        font-size: 2rem;
+    }
+
+    .contact h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+
+    .headerex {
+        padding: 1rem 2%;
+    }
+
+    .headerex #main-logo {
+        font-size: 2rem;
+    }
+
+    .navbarex a {
+        font-size: 1.3rem;
+        margin-left: 1rem;
+    }
+
+    .home-image {
+        width: 80vw;
+    }
+
+    .home-content h3,
+    .home-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.8rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .social-media a {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* Additional CSS for the Menu Icon Toggle */
+.menu-icon {
+    display: none; /* Hide by default */
+}
+
+/* Show the mobile menu when the menu icon is clicked */
+.menu-active {
+    display: flex !important; /* Ensure it takes priority */
+    flex-direction: column;
+    align-items: flex-start;
+}
