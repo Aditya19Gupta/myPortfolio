@@ -539,6 +539,7 @@ header{
 }
 .owl-item > .card{
     width: 40rem!important;
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 #mexperience{
