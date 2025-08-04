@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aditya Gupta</title>
+    <title>Aditya Gupta - Portfolio</title>
+    
+    <!-- Enhanced CSS Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    
+    <!-- Animation Libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="me.css">
+    
+    <!-- Enhanced Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
@@ -19,310 +28,376 @@
         integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
         crossorigin="anonymous"></script>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-    /* Reseting
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    body {
-        background: linear-gradient(to right, #101c81, #2a6ba3);
-        min-height: 100vh;
-    } */
-    /* #glow {
-            z-index: 999999999;
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(0, 255, 204, 0.8) 0%, rgba(0, 255, 204, 0) 80%);
-            border-radius: 50%;
-            pointer-events: none;
-            filter: blur(20px);
-            transform: translate(-50%, -50%);
-        } */
-</style>
 
 <body>
-    <!-- <div id="glow"></div> -->
-    <!-- header design -->
-    <header class="headerex" style="padding-right: 3rem!important;">
+    <!-- Animated Background Particles -->
+    <div id="particles-js"></div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" data-speed="2"></div>
+        <div class="floating-element" data-speed="1.5"></div>
+        <div class="floating-element" data-speed="3"></div>
+        <div class="floating-element" data-speed="2.5"></div>
+    </div>
 
-        <a class="logo" href="#mhome" style="text-decoration: none; display: flex; align-items: center; font-size: 2rem; color: #fff;">
-            <i id="main-logo" class='bx bxs-lemon' style="font-size: 2.5rem; margin-right: 8px; color: rgb(229, 24, 24);"></i> Aditya Gupta
+    <!-- Enhanced Header -->
+    <header class="headerex" style="padding-right: 3rem!important;">
+        <a class="logo animate__animated animate__fadeInLeft" href="#mhome" style="text-decoration: none; display: flex; align-items: center; font-size: 2rem; color: #fff;">
+            <i id="main-logo" class='bx bxs-lemon animate__animated animate__pulse animate__infinite' style="font-size: 2.5rem; margin-right: 8px; color: rgb(229, 24, 24);"></i> 
+            <span class="logo-text">Aditya Gupta</span>
         </a>
         
-        <i class='bx bx-menu' id="menu-icon"></i>
-        <nav class="navbarex">
-            <a href="#mhome" id="active" class="active">Home</a>
-            <a href="#mabout" id="about">About</a>
-            <a href="#mskills" id="skills">Skills & Projects</a>
-            <a href="#mexperience" id="experience">Experience</a>
-            <!-- <a href="#macchieve" id="achieve">Acievements</a> -->
-            <a href="#mcontact" id="contact">Contact</a>
+        <i class='bx bx-menu animate__animated animate__fadeInRight' id="menu-icon"></i>
+        <nav class="navbarex animate__animated animate__fadeInDown">
+            <a href="#mhome" id="active" class="active nav-link">Home</a>
+            <a href="#mabout" id="about" class="nav-link">About</a>
+            <a href="#mskills" id="skills" class="nav-link">Skills & Projects</a>
+            <a href="#mexperience" id="experience" class="nav-link">Experience</a>
+            <a href="#mcontact" id="contact" class="nav-link">Contact</a>
         </nav>
-
     </header>
-    <!-- home section design -->
+
+    <!-- Enhanced Home Section -->
     <section class="home" id="mhome">
-        <div class="home-content">
-            <h3>Hello It's me</h3>
-            <h1>Aditya Gupta</h1>
-            <h3>I am a
-                <span class="multiple-text"></span>
-            </h3>
-            <p style="font-weight: 100;font-size: 1.3rem;">Hi, I'm Aditya Gupta, a passionate developer with expertise
-                in Java, Spring, and front-end
-                technologies. I enjoy building dynamic and efficient web applications, and I’m always excited to solve
-                complex problems
-                through code. Currently, I’m interning and looking to transition to full-time roles.
-            </p>
-
-            <div class="social-media">
-                <!-- <a href="#"><i class='bx bxl-youtube'></i></a>-->
-                <a id="linkin" href="https://www.linkedin.com/in/aditya-gupta-571901240/"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a id="insta" href="https://www.instagram.com/adityagupta3379/"><i class='bx bxl-instagram'></i></a>
-                <a id="face" href="https://www.facebook.com/profile.php?id=100055008103515"><i
-                        class='bx bxl-facebook'></i></a>
+        <div class="home-content" data-aos="fade-right" data-aos-duration="1000">
+            <div class="greeting-text animate__animated animate__fadeInUp">
+                <h3>Hello, It's me</h3>
             </div>
-            <div>
-                <a href="resume.pdf" class="btn" id="download-cv" download>Download CV</a>
-
+            <div class="name-text animate__animated animate__fadeInUp animate__delay-1s">
+                <h1 class="gradient-text">Aditya Gupta</h1>
+            </div>
+            <div class="role-text animate__animated animate__fadeInUp animate__delay-2s">
+                <h3>I am a
+                    <span class="multiple-text"></span>
+                </h3>
+            </div>
+            <div class="description-text animate__animated animate__fadeInUp animate__delay-3s">
+                <p style="font-weight: 100;font-size: 1.3rem;">Hi, I'm Aditya Gupta, a passionate developer with expertise
+                    in Java, Spring, and front-end
+                    technologies. I enjoy building dynamic and efficient web applications, and I'm always excited to solve
+                    complex problems
+                    through code. Currently, I'm interning and looking to transition to full-time roles.
+                </p>
             </div>
 
+            <div class="social-media animate__animated animate__fadeInUp animate__delay-4s">
+                <a id="linkin" href="https://www.linkedin.com/in/aditya-gupta-571901240/" class="social-link">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a id="insta" href="https://www.instagram.com/adityagupta3379/" class="social-link">
+                    <i class='bx bxl-instagram'></i>
+                </a>
+                <a id="face" href="https://www.facebook.com/profile.php?id=100055008103515" class="social-link">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+            </div>
+            <div class="cta-buttons animate__animated animate__fadeInUp animate__delay-5s">
+                <a href="resume.pdf" class="btn btn-primary" id="download-cv" download>
+                    <i class='bx bx-download'></i> Download CV
+                </a>
+                <a href="#mcontact" class="btn btn-secondary">
+                    <i class='bx bx-message-rounded'></i> Get In Touch
+                </a>
+            </div>
         </div>
 
-        <div class="home-image">
-
-            <img src="mypics.png" alt="" style="filter: drop-shadow(0px 0px 50px rgba(0, 238, 255, 0.8));">
+        <div class="home-image animate__animated animate__fadeInRight" data-aos="fade-left" data-aos-duration="1000">
+            <div class="image-container">
+                <img src="mypics.png" alt="Aditya Gupta" class="profile-image">
+                <div class="image-glow"></div>
+            </div>
         </div>
-
     </section>
+
+    <!-- Enhanced About Section -->
     <section class="about" id="mabout">
-        <div class="imageabout">
-            <img src="re.png" alt="">
+        <div class="imageabout" data-aos="fade-right" data-aos-duration="1000">
+            <div class="image-wrapper">
+                <img src="re.png" alt="About Me" class="about-image">
+                <div class="image-overlay"></div>
+            </div>
         </div>
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-left" data-aos-duration="1000">
             <div class="carousel">
-                <h1>About <span>Me</span></h1>
-                <div>
-
-                    <h3>Java Developer</h3>
-                    <p style="font-weight: 100; font-size: 1.8rem;">
-                        <span style="font-size: 3rem;"><i class='bx bxs-quote-single-left'></i></span>
+                <h1 class="section-title">About <span class="highlight">Me</span></h1>
+                <div class="about-text">
+                    <h3 class="role-title">Java Developer</h3>
+                    <p class="about-description">
+                        <span class="quote-icon"><i class='bx bxs-quote-single-left'></i></span>
                         Hi, I'm Aditya Gupta, a passionate developer with expertise in Java, Spring, and front-end
-                        technologies. I enjoy building dynamic and efficient web applications, and I’m always excited to
-                        solve complex problems through code. Currently, I’m interning and looking to transition to
+                        technologies. I enjoy building dynamic and efficient web applications, and I'm always excited to
+                        solve complex problems through code. Currently, I'm interning and looking to transition to
                         full-time roles.
-                        <span style="font-size: 3rem; vertical-align: middle; margin-left: 5px;"><i
-                                class='bx bxs-quote-single-right'></i></span>
+                        <span class="quote-icon"><i class='bx bxs-quote-single-right'></i></span>
                     </p>
-
-
-                    <button style="margin-left: 1rem;margin-bottom: 1rem;" class="btn"><a
-                            style="text-decoration: none!important;"
-                            href="https://www.linkedin.com/in/aditya03gupta/">Read more</a></button>
+                    <button class="btn btn-primary">
+                        <a href="https://www.linkedin.com/in/aditya03gupta/" target="_blank">Read More</a>
+                    </button>
                 </div>
             </div>
-
         </div>
     </section>
+
+    <!-- Enhanced Skills Section -->
     <section class="skills" id="mskills">
-        <div class="skills-content " id="cskills" style="margin: -6.5rem!important;">
-            <h1 style="font-size: 4rem;font-weight: 800;color:#fff">My <span style="color:#0ef">Skills & Projects</span>
-            </h1>
-            <div class="skills-wrapper mt-5">
-                <!-- Skill Block 1 -->
-                <div class="skill-card">
-                    <h2 style="color:#fff;">🚀 Java Development</h2>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 90%;">90%</div>
+        <div class="skills-content" id="cskills" style="margin: -6.5rem!important;">
+            <h1 class="section-title" data-aos="fade-up">My <span class="highlight">Skills & Projects</span></h1>
+            
+            <div class="skills-wrapper mt-5" data-aos="fade-up" data-aos-delay="200">
+                <!-- Enhanced Skill Cards -->
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="skill-icon">🚀</div>
+                    <h2>Java Development</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90">90%</div>
+                        </div>
                     </div>
-                    <p>🔧 I have extensive experience in Java, including backend development, API creation, and web applications.</p>
+                    <p>Extensive experience in Java, including backend development, API creation, and web applications.</p>
                 </div>
-    
-                <!-- Skill Block 2 -->
-                <div class="skill-card">
-                    <h2 style="color:#fff;">🌿 Spring Framework</h2>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 85%;">85%</div>
+
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="skill-icon">🌿</div>
+                    <h2>Spring Framework</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85">85%</div>
+                        </div>
                     </div>
-                    <p>🛠️ Proficient in building scalable applications using Spring Boot and Spring MVC.</p>
+                    <p>Proficient in building scalable applications using Spring Boot and Spring MVC.</p>
                 </div>
-    
-                <!-- Skill Block 3 -->
-                <div class="skill-card">
-                    <h2 style="color:#fff;">🌐 Front-end Development</h2>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 75%;">75%</div>
+
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="skill-icon">🌐</div>
+                    <h2>Front-end Development</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75">75%</div>
+                        </div>
                     </div>
-                    <p>💻 Experience with HTML, CSS, JavaScript, and frameworks like React for creating dynamic UIs.</p>
+                    <p>Experience with HTML, CSS, JavaScript, and frameworks like React for creating dynamic UIs.</p>
                 </div>
-    
-                <!-- Skill Block 4 -->
-                <div class="skill-card">
-                    <h2 style="color:#fff;">💾 Database Management</h2>
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 80%;">80%</div>
+
+                <div class="skill-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="skill-icon">💾</div>
+                    <h2>Database Management</h2>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80">80%</div>
+                        </div>
                     </div>
-                    <p>🗄️ Skilled in SQL, MySQL, and database design for efficient data storage and retrieval.</p>
+                    <p>Skilled in SQL, MySQL, and database design for efficient data storage and retrieval.</p>
                 </div>
             </div>
-            <div class="java" style="height: 60rem; margin-top: 6rem;">
-                <!-- <h2 style="font-size: 3rem;font-weight: 700;color:#fff;margin-top: 2rem;">Projects<span><a
-                            href=""></a></span> </h2> -->
+
+            <!-- Enhanced Projects Section -->
+            <div class="projects-section" data-aos="fade-up" data-aos-delay="400">
+                <h2 class="projects-title">Featured Projects</h2>
                 <div class="owl-carousel owl-theme mt-5">
-
                     <div class="owl-item">
-                        <div class="card">
-                            <div class="img-card">
-                                <img src="recopays.png" alt="">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="recopays.png" alt="Recopays Project">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://recopays.com/" target="_blank" class="project-link">
+                                            <i class='bx bx-link-external'></i> View Project
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="testimonial mt-4 mb-2" style="font-size: 1.5rem;color: #fff;">
-                                I work on backend and frontend to handle all activities of admin like upi transaction
-                                detail, banks transaction detail.
-                                Create different RestAPIS to get detail and all detail saving in mysql database.
-                                <br>
-                                <br>
-                                <a href="https://recopays.com/"
-                                    style="padding: 0;padding-left: 1.5rem;padding-right: 1.5rem;" class="btn">See</a>
-
-                            </div>
-                            <div class="name" style="font-size: 1.5rem;">
-                                Recopays Admin Portal
+                            <div class="project-content">
+                                <h3 class="project-title">Recopays Admin Portal</h3>
+                                <p class="project-description">
+                                    Backend and frontend development for admin activities including UPI transaction details, 
+                                    bank transaction details, and REST APIs with MySQL database integration.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">MySQL</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-item">
-                        <div class="card">
-                            <div class="img-card">
-                                <img src="vega.png" alt="">
-                            </div>
-                            <div class="testimonial mt-4 mb-2" style="font-size: 1.5rem;color: #fff;">
-                                I work on backend and frontend to handle all activities of admin like upi transaction
-                                detail, banks transaction detail.
-                                Create different RestAPIS to get detail and all detail saving in mysql database.
-                                <br>
-                                <br>
-                                <a href="https://www.vega.co.in/"
-                                    style="padding: 0;padding-left: 1.5rem;padding-right: 1.5rem;" class="btn">See</a>
 
+                    <div class="owl-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="vega.png" alt="VegaCRM Project">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://www.vega.co.in/" target="_blank" class="project-link">
+                                            <i class='bx bx-link-external'></i> View Project
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="name" style="font-size: 1.5rem;">
-                                VegaCRM Admin Portal
+                            <div class="project-content">
+                                <h3 class="project-title">VegaCRM Admin Portal</h3>
+                                <p class="project-description">
+                                    Comprehensive CRM system with transaction management, user administration, 
+                                    and real-time data processing capabilities.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring MVC</span>
+                                    <span class="tech-tag">REST APIs</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-item">
-                        <div class="card">
-                            <div class="img-card">
-                                <img src="zip2d.png" alt="">
-                            </div>
-                            <div class="testimonial mt-4 mb-2" style="font-size: 1.5rem;color: #fff;">
-                                I work on backend and frontend to handle all activities of admin like upi transaction
-                                detail, banks transaction detail.
-                                Create different RestAPIS to get detail and all detail saving in mysql database.
-                                <br>
-                                <br>
-                                <a href="https://www.zip2d.com/"
-                                    style="padding: 0;padding-left: 1.5rem;padding-right: 1.5rem;" class="btn">See</a>
 
+                    <div class="owl-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="zip2d.png" alt="Zip2d Project">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="https://www.zip2d.com/" target="_blank" class="project-link">
+                                            <i class='bx bx-link-external'></i> View Project
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="name" style="font-size: 1.5rem;">
-                                Zip2d Admin Portal
+                            <div class="project-content">
+                                <h3 class="project-title">Zip2d Admin Portal</h3>
+                                <p class="project-description">
+                                    Ticket booking application with integrated payment processing, 
+                                    user management, and comprehensive admin dashboard.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">Payment Gateway</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="owl-item">
-                        <div class="card">
-                            <div class="img-card">
-                                <img src="medai.png" alt="">
-                            </div>
-                            <div class="testimonial mt-4 mb-2" style="font-size: 1.5rem;color: #fff;">
-                                I work on backend and frontend to handle all activities of admin like upi transaction
-                                detail, banks transaction detail.
-                                Create different RestAPIS to get detail and all detail saving in mysql database.
-                                <br>
-                                <br>
-                                <a href="#" style="padding: 0;padding-left: 1.5rem;padding-right: 1.5rem;"
-                                    class="btn">See</a>
 
+                    <div class="owl-item">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="medai.png" alt="Medai Project">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class='bx bx-link-external'></i> Coming Soon
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="name" style="font-size: 1.5rem;">
-                                Zip2d Admin Portal
+                            <div class="project-content">
+                                <h3 class="project-title">Medai Platform</h3>
+                                <p class="project-description">
+                                    Advanced media management platform with content delivery, 
+                                    analytics, and user engagement features.
+                                </p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Java</span>
+                                    <span class="tech-tag">Spring Boot</span>
+                                    <span class="tech-tag">Media APIs</span>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Experience Section -->
+    <section class="experience" id="mexperience">
+        <div class="skills-content" id="cskills" style="margin: -6.5rem!important;">
+            <h1 class="section-title" data-aos="fade-up">Tech <span class="highlight">Experience</span></h1>
+            
+            <div class="roadmap mt-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="roadmap-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-marker"></div>
+                    <div class="year">Jan, 2024 - Present</div>
+                    <div class="details">
+                        <h2>CSKAA</h2>
+                        <h3>Java Full Stack Developer Intern</h3>
+                        <ul>
+                            <li>Worked on the Ticket Booking App: <strong>Zip2D</strong></li>
+                            <li>Developed a Transaction Management App: <strong>ReCoPays</strong></li>
+                            <li>Technologies: Spring Boot, Frontend, Backend, YSQL DBMS</li>
+                            <li>Duration: 10 Months</li>
+                        </ul>
                     </div>
                 </div>
                 
-    </section>
-
-    <section class="experience" id="mexperience">
-        <div class="skills-content" id="cskills" style="margin: -6.5rem!important;">
-          <h1 style="font-size: 4rem;font-weight: 800;color:#fff">Tech <span style="color:#0ef">Experience</span></h1>
-          
-          <div class="roadmap mt-5">
-            <div class="roadmap-item">
-              <div class="year">Jan, 2024 - Present</div>
-              <div class="details">
-                <h2>CSKAA</h2>
-                <h3>Java Full Stack Developer Intern</h3>
-                <ul>
-                  <li>Worked on the Ticket Booking App: <strong>Zip2D</strong></li>
-                  <li>Developed a Transaction Management App: <strong>ReCoPays</strong></li>
-                  <li>Technologies: Spring Boot, Frontend, Backend, YSQL DBMS</li>
-                  <li>Duration: 10 Months</li>
-                </ul>
-              </div>
+                <div class="roadmap-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-marker"></div>
+                    <div class="year">Sep, 2023 to Dec, 2023</div>
+                    <div class="details">
+                        <h2>ATG</h2>
+                        <h3>Java Full Stack Developer Intern</h3>
+                        <ul>
+                            <li>Contributed to various projects involving frontend and backend development</li>
+                            <li>Worked on integrating APIs and managing databases</li>
+                            <li>Duration: 3 Months</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            
-            <div class="roadmap-item">
-              <div class="year">Sep, 2023 to Dec, 2023</div>
-              <div class="details">
-                <h2>ATG</h2>
-                <h3>Java Full Stack Developer Intern</h3>
-                <ul>
-                  <li>Contributed to various projects involving frontend and backend development</li>
-                  <li>Worked on integrating APIs and managing databases</li>
-                  <li>Duration: 3 Months</li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
       
+    <!-- Enhanced Contact Section -->
     <section class="contact" id="mcontact">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
-                <h1><i id="icon-con" class='bx bxs-contact'></i> Contact <span>Me</span></h1>
-                <a style="text-decoration:none;color: #fff;" href="tel:+919794369680">
-                    <h3><i id="phone" class='bx bxs-phone'></i>Call me : <span>9794369680</span> </h3>
+        <div class="contact-container" data-aos="fade-up">
+            <h1 class="section-title">
+                <i class='bx bxs-contact contact-icon'></i> Contact <span class="highlight">Me</span>
+            </h1>
+            
+            <div class="contact-cards">
+                <a href="tel:+919794369680" class="contact-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-icon-wrapper">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <h3>Call me</h3>
+                    <span class="contact-value">+91 9794369680</span>
                 </a>
-                <a style="text-decoration:none;color: #fff;"
-                    href="https://api.whatsapp.com/send/?phone=9555942426&text&type=phone_number">
-                    <h3><i id="whats" class='bx bxl-whatsapp'></i> Whatsapp me : <span>9555942426</span></h3>
+                
+                <a href="https://api.whatsapp.com/send/?phone=9555942426&text&type=phone_number" 
+                   class="contact-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-icon-wrapper">
+                        <i class='bx bxl-whatsapp'></i>
+                    </div>
+                    <h3>WhatsApp</h3>
+                    <span class="contact-value">+91 9555942426</span>
                 </a>
-                <a style="text-decoration:none;color: #fff;"
-                    href="mailto:adityacse207@gmail.com?subject='contact me on gmail'">
-                    <h3><i id="gmail" class='bx bxl-gmail'></i> Email me :<span>adityacse207@gmail.com</span></h3>
+                
+                <a href="mailto:adityacse207@gmail.com?subject='Contact from Portfolio'" 
+                   class="contact-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-icon-wrapper">
+                        <i class='bx bxl-gmail'></i>
+                    </div>
+                    <h3>Email</h3>
+                    <span class="contact-value">adityacse207@gmail.com</span>
                 </a>
             </div>
         </div>
     </section>
 
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+        <i class='bx bx-chevron-up'></i>
+    </button>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
-<script src="my.js"></script>
-<script>
-</script>
+    <!-- Enhanced Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    
+    <!-- Animation Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="my.js"></script>
+</body>
 
 </html>
